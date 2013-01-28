@@ -6,4 +6,5 @@
   $('#dialog-form').dialog('close');
   $('#dialog-form').remove();
   $('table').append('<%= escape_javascript(render(@article)) %>');
+  $('table tr:last .modal').click(attatchModal());
 <%- end %>
